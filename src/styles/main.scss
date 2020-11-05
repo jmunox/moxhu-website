@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+:root {
+  --title-font-size: 88px;
+  --subtitle-font-size: 44px;
+  --lead-font-size: 22px;
+  --font-family: "Avenir-Medium", "Avenir", sans-serif;
+}
+
+:global .title {
+  font-size: calc(0.9 * var(--title-font-size));
+}
+
+:global .subtitle {
+  font-size: calc(0.9 * var(--subtitle-font-size));
+}
+
+body {
+  //font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--font-family);
+  
+}
+
+a {
+  text-decoration: none;
+}
+
