@@ -1,30 +1,31 @@
-import * as React from 'react'
-import { view } from 'react-easy-state'
+import * as React from 'react';
+import { view } from 'react-easy-state';
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Hero from './Hero';
-import MyIntro from './MyIntro';
+import HelloThere from './HelloThere';
 import WhatFuture from './WhatFuture';
 import The5Whats from './The5Whats';
 import HolisticApproach from './HolisticApproach';
-import AboutMe from './AboutMe';
-import classNames from 'classnames'
 
-import PicBanner from 'media/linked-in-banner.png'
+import PicBanner from 'media/linked-in-banner.png';
 
+export default view((props) => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
-import * as css from './Home.scss'
-
-export default view(() => {
   return (
     <React.Fragment>
       <Hero/>
-      <MyIntro/>
+      <HelloThere/>
       <WhatFuture/>
       <The5Whats/>
       <HolisticApproach/> 
       <section>
         <img src={PicBanner} />
       </section>
-      <AboutMe/>
     </React.Fragment>
   )
 })

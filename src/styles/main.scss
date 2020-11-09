@@ -5,23 +5,52 @@
   --subtitle-font-size: 44px;
   --lead-font-size: 22px;
   --font-family: "Avenir-Medium", "Avenir", sans-serif;
+  --bg_purple: #6152cc;
+  --design_bg: #ff88aa;
+  --design_text: #c40233;
+  --tech_bg: #ffd300;
+  --tech_text: #000000;
+  --user_text: #0087bd;
+  --user_bg: #50e3c2;
+  --selection-text: #fe57a1;
 }
 
 :global .title {
   font-size: calc(0.9 * var(--title-font-size));
 }
 
-:global .subtitle {
+/*:global .subtitle {
   font-size: calc(0.9 * var(--subtitle-font-size));
+}*/
+
+:global .is-purple {
+  background-color: var(--bg_purple, #6152cc);
+  border-color: transparent;
+  color: #fff;
+
+}
+
+:global .button.is-purple:hover {
+  color: #ffe2e2;
 }
 
 body {
   //font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-family: var(--font-family);
+  ::selection {
+    background: var(--selection-text, #fe57a1);
+    color: #fff;
+    text-shadow: none;
+}
   
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
 }
 

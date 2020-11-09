@@ -1,14 +1,11 @@
 import * as React from 'react'
 import { view } from 'react-easy-state'
-import classNames from 'classnames'
 import VisionPic from 'media/noun_Astronaut_2909362.png'
-
-import * as css from './MyIntro.scss'
 
 export default view(() => {
   return (
     <section id="what-future" className="section has-background-white">
-      <div className="container has-text-left my-4 mx-6">
+      <div className="container has-text-left pl-3 my-4 mx-6">
         <div className='columns is-vcentered is-desktop is-multiline'>
           <div className='column is-half-desktop'>
             <h1 className="title">
@@ -17,19 +14,24 @@ export default view(() => {
           </div>
           <div className='column is-half-desktop'>
           <figure className="image has-text-center">
-            <img className='is-rounded' style='max-width: 90%' src={VisionPic} />
+            <img style='max-width: 100%' src={VisionPic} />
             </figure>
           </div>
           <div className='column is-full'>
-            <div className={classNames(css.subtitle)}>
+            <div className='subtitle is-2'>
               Let me help you envision how people experience your product and bring that vision to life.
               </div>
           </div>
           <div className='column'>
-            <a className="button is-info">
-              <span>Let's talk</span>
+            <a className="subtitle is-4 button is-purple"
+            onClick={
+              (event) => {
+                event.preventDefault(); 
+                document.getElementById('the-5-whats').scrollIntoView({ behavior: 'smooth', block: 'start' })
+            }}>
+              <span>Let's get started</span>
               <span className="icon">
-                <i className="fas fa-chevron-right"></i>
+                <i className="fas fa-chevron-down"></i>
               </span>
             </a>
           </div>
