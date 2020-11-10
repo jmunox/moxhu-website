@@ -41,7 +41,7 @@ export default view(() => {
           </span> with <span className={css.technologyLabel}><span className={classNames(css.technology, css.labelSubtitle)}>technology</span></span> and <span className={css.userResearchLabel}><span className={classNames(css.userResearch, css.labelSubtitle)}>user research</span></span> to help you connect to the people you care about and create a future together.</div>
          <div className='block is-hidden-desktop mt-6'></div>
          <div className='pt-2'>
-         <a className="subtitle is-4 button is-purple"
+         <a className="button is-large is-purple"
           onClick={
             (event) => {
               event.preventDefault(); 

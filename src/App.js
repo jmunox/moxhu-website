@@ -48,7 +48,7 @@ export default view((props) => {
   const splashScreen = store({
     isActive: true,
   });
-  let isActive = useDebounce(splashScreen.isActive, 8000);
+  let isActive = useDebounce(splashScreen.isActive, 7500);
   
   useEffect(() => {
     splashScreen.isActive = false;

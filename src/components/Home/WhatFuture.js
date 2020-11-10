@@ -23,7 +23,7 @@ export default view(() => {
               </div>
           </div>
           <div className='column'>
-            <a className="subtitle is-4 button is-purple"
+            <a className="button is-large is-purple"
             onClick={
               (event) => {
                 event.preventDefault(); 

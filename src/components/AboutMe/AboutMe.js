@@ -21,12 +21,12 @@ export default view(() => {
       </a>
             </div>
           <div className='column is-5-desktop '>
-          <div className="subtitle mt-5 is-3">
+          <div className="subtitle mt-5 is-2">
             I am a designer and researcher from the sunny side of México, living in Eindhoven, the most innovative city in the world. 
               </div>
           </div>
           <div className='column is-full mt-5'>
-            <div className="subtitle mt-5 is-3">
+            <div className="subtitle mt-5 is-2">
             I am on a mission to <b>lead pluriversality</b> in the design process <b>and inspire</b> a new definition of <b>creative power</b> that is <b>based on freedom, partnership and participation</b>.
               </div>
           </div>

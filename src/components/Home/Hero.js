@@ -40,7 +40,7 @@ const easeVariants = {
             <h2 className="subtitle has-text-primary-light pt-6 is-3">
               Bring user experience at the forefront.
       </h2>
-            <a className="subtitle is-4 button is-purple"
+            <a className="button is-large is-purple"
             onClick={
               (event) => {
                 event.preventDefault(); 

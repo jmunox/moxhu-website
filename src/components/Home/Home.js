@@ -7,6 +7,7 @@ import HelloThere from './HelloThere';
 import WhatFuture from './WhatFuture';
 import The5Whats from './The5Whats';
 import HolisticApproach from './HolisticApproach';
+import Organizations from './Organizations';
 
 import PicBanner from 'media/linked-in-banner.png';
 
@@ -21,6 +22,7 @@ export default view((props) => {
       <Hero/>
       <HelloThere/>
       <WhatFuture/>
+      <Organizations/>
       <The5Whats/>
       <HolisticApproach/> 
       <section>

@@ -12,13 +12,13 @@ import * as css from './Home.scss';
 export default view(() => {
   return (
     <React.Fragment>
-    <section className='section has-background-dark'>
-    <div className="container has-text-left pl-3 my-4 mx-6">
-      <h1 className='title is-1 my-5 has-text-white'>Your path to greatness in 5 steps:</h1>
+    <section className='section has-background-white'>
+    <div className="container has-text-left pl-3 mx-6">
+      <h1 className='title is-1 has-text-dark'>Your path to greatness in 5 steps:</h1>
       </div>
     </section>
     <section id="the-5-whats" className="section has-background-white">
-      <div className="container has-text-left pl-3 my-4 mx-6">
+      <div className="container has-text-left pl-3 mb-4 mx-6">
         <div className='columns is-vcentered is-desktop is-multiline'>
         <div id='what-1' className={classNames('column is-half-desktop py-6 mt-6', css.hasUserResearchBackground)}>
             <h1 className="title">
@@ -39,16 +39,13 @@ export default view(() => {
             </div>
           </div>
           <div className='column is-full pb-6 mb-6'>
-            <a className='subtitle is-4 button is-purple'
+            <a className='button is-large is-purple'
             onClick={
               (event) => {
                 event.preventDefault(); 
                 document.getElementById('contact').scrollIntoView({ behavior: 'smooth', block: 'start' })
             }}>
               <span>Tune in with the people you care about</span>
-              <span className="icon">
-                <i className="fas fa-chevron-right"></i>
-              </span>
             </a>
           </div>
           <div id='what-2' className={classNames('column is-half-desktop py-6 mt-6', css.hasDesignBackground)}>
@@ -70,16 +67,13 @@ export default view(() => {
               </div>
           </div>
           <div className='column is-full pb-6 mb-6'>
-            <a className="subtitle is-4 button is-purple"
+            <a className="button is-large is-purple"
             onClick={
               (event) => {
                 event.preventDefault(); 
                 document.getElementById('contact').scrollIntoView({ behavior: 'smooth', block: 'start' })
             }}>
               <span>Grow participation of your users</span>
-              <span className="icon">
-                <i className="fas fa-chevron-right"></i>
-              </span>
             </a>
           </div>
           <div id='what-3' className={classNames('column is-half-desktop py-6 mt-6', css.hasDesignBackground)}>
@@ -101,16 +95,13 @@ export default view(() => {
               </div>
           </div>
           <div className='column is-full pb-6 mb-6'>
-            <a className="subtitle is-4 button is-purple"
+            <a className="button is-large is-purple"
             onClick={
               (event) => {
                 event.preventDefault(); 
                 document.getElementById('contact').scrollIntoView({ behavior: 'smooth', block: 'start' })
             }}>
               <span>Live with a superpower</span>
-              <span className="icon">
-                <i className="fas fa-chevron-right"></i>
-              </span>
             </a>
           </div>
           <div id='what-4' className={classNames('column is-half-desktop py-6 mt-6', css.hasTechnologyBackground)}>
@@ -132,16 +123,13 @@ export default view(() => {
               </div>
           </div>
           <div className='column is-full pb-6 mb-6'>
-            <a className="subtitle is-4 button is-purple"
+            <a className="button is-large is-purple"
             onClick={
               (event) => {
                 event.preventDefault(); 
                 document.getElementById('contact').scrollIntoView({ behavior: 'smooth', block: 'start' })
             }}>
               <span>Start learning and start leading</span>
-              <span className="icon">
-                <i className="fas fa-chevron-right"></i>
-              </span>
             </a>
           </div>
           <div id='what-5' className={classNames('column is-half-desktop py-6 my-6', css.hasUserResearchBackground)}>
@@ -163,16 +151,13 @@ export default view(() => {
               </div>
           </div>
           <div className='column is-full pb-5'>
-            <a className="subtitle is-4 button is-purple"
+            <a className="button is-large is-purple"
             onClick={
               (event) => {
                 event.preventDefault(); 
                 document.getElementById('contact').scrollIntoView({ behavior: 'smooth', block: 'start' })
             }}>
               <span>Change how people feel about your product</span>
-              <span className="icon">
-                <i className="fas fa-chevron-right"></i>
-              </span>
             </a>
           </div>
         </div>
