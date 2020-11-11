@@ -31,10 +31,10 @@ export default view(() => {
             </figure>
           </div>
           <div className='column is-full'>
-            <div className='subtitle is-2'>
+            <div className='subtitle mt-2'>
             Do you know what is going on with your customers?
             </div>
-            <div className='subtitle is-2'>
+            <div className='subtitle'>
             Asking questions is the starting point to bridge the gap between your users and your business.
             </div>
           </div>
@@ -59,10 +59,10 @@ export default view(() => {
             </figure>
           </div>
           <div className='column is-full'>
-            <div className='subtitle is-2'>
+            <div className='subtitle mt-2'>
             Do you know what is important for your users?
             </div>
-            <div className='subtitle is-2'>
+            <div className='subtitle'>
             Empathize with their wishes. Empower your users to build a meaningful connection with your product.
               </div>
           </div>
@@ -87,10 +87,10 @@ export default view(() => {
             </figure>
           </div>
           <div className='column is-full'>
-            <div className='subtitle is-2'>
+            <div className='subtitle mt-2'>
             What are the possible solutions?
             </div>
-            <div className='subtitle is-2'>
+            <div className='subtitle'>
             The future of your business is limited by your imagination and by the imagination of your customers. Collaboration is queen.
               </div>
           </div>
@@ -115,10 +115,10 @@ export default view(() => {
             </figure>
           </div>
           <div className='column is-full'>
-            <div className='subtitle is-2'>
+            <div className='subtitle mt-2'>
             What is the best fit for your customer?
             </div>
-            <div className='subtitle is-2'>
+            <div className='subtitle'>
             Transform uncertainty into opportunities to solve your challenges. Research, prototype, pilot, scale, iterate.
               </div>
           </div>
@@ -132,7 +132,7 @@ export default view(() => {
               <span>Start learning and start leading</span>
             </a>
           </div>
-          <div id='what-5' className={classNames('column is-half-desktop py-6 my-6', css.hasUserResearchBackground)}>
+          <div id='what-5' className={classNames('column is-half-desktop py-6 mt-6', css.hasUserResearchBackground)}>
             <h1 className="title">
             5. Feedback is your opportunity to grow
               </h1>
@@ -143,10 +143,10 @@ export default view(() => {
             </figure>
           </div>
           <div className='column is-full'>
-            <div className='subtitle is-2'>
+            <div className='subtitle mt-2'>
             How can your product be improved? 
             </div>
-            <div className='subtitle is-2'>
+            <div className='subtitle'>
             Meet face-to-face the problems of your users. Move the decision making closer to your users.
               </div>
           </div>

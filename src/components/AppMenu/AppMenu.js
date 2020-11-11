@@ -40,6 +40,7 @@ const BurgerMenu = () => {
   let z = isOpen ? '1000' : '0';
 
   let style = { zIndex: isOpen ? useDebounce(z, 0): useDebounce(z, 1000)};
+  let isHidden = isOpen ? useDebounce('', 0): useDebounce('is-hidden', 500); 
   //document.body.className = 'has-navbar-fixed-top has-background-dark';
 
   return (
@@ -51,7 +52,9 @@ const BurgerMenu = () => {
       ref={containerRef}
     >
       <motion.div className={css.background} variants={sidebar} />
-      <Navigation toggle={() => toggleOpen()} />
+      <div className={isHidden}>
+        <Navigation toggle={() => toggleOpen()} />
+      </div>
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
   );

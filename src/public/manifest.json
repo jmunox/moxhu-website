@@ -1,0 +1,27 @@
+{
+  "short_name": "Design | Moxhu",
+  "name": "Design, Research & Digital Innovation | Moxhu",
+  "description": "Hello there, I am Jesús Muñoz-Alcántara, Mexican Designer & Researcher, living in the Netherlands. I combine design with technology and user research to help you connect to the people you care about and create a future together.",
+  "icons": [
+    {
+      "src": "profile-circle.059e1e08.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "profile-circle.059e1e08.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "profile-circle.059e1e08.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }	    
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

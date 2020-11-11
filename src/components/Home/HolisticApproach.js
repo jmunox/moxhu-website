@@ -24,11 +24,11 @@ export default view(() => {
             </figure>
           </div>
           <div className='column is-full'>
-            <div className='subtitle is-2 pb-3'>
+            <div className='subtitle pb-3'>
             I use a <u>holistic design research</u> approach to inspire creativity, participation and collaboration in emerging tech communities.
             <br/>
             </div>
-            <div className='subtitle is-2'>
+            <div className='subtitle'>
             I create communities that care about your business, and innovate the user experience of your product along the way.  
               </div>
           </div>

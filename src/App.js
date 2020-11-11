@@ -7,7 +7,7 @@ import Home from 'components/Home/Home';
 import AppMenu from 'components/AppMenu/AppMenu';
 import AboutMe from 'components/AboutMe/AboutMe';
 import LoadingIntro from 'components/LoadingIntro/LoadingIntro';
-import ContactLinks from 'components/Home/ContactLinks';
+import ContactLinks from 'components/ContactLinks/ContactLinks';
 
 import './styles/main.scss';
 

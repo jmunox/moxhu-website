@@ -37,7 +37,7 @@ const easeVariants = {
             <h1 className="title has-text-primary-light">
               Power your future <br /> with the people <br /> who love <br />your product.
         </h1>
-            <h2 className="subtitle has-text-primary-light pt-6 is-3">
+            <h2 className="subtitle has-text-primary-light pt-6">
               Bring user experience at the forefront.
       </h2>
             <a className="button is-large is-purple"

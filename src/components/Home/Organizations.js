@@ -11,40 +11,40 @@ export default view(() => {
         <div className="container has-text-centered pt-5">
         <div className='columns is-centered is-mobile is-multiline'>        
             <div className='column pb-6 is-3'>
-            <h2 className="subtitle is-3 has-text-grey-lighter">Atos Spain</h2>
+            <h2 className="subtitle has-text-grey-lighter">Atos Spain</h2>
             </div>
             <div className='column pb-6 is-3'>
-            <h2 className="subtitle is-3 has-text-grey-lighter">ASML</h2>
+            <h2 className="subtitle has-text-grey-lighter">ASML</h2>
             </div>
             <div className='column pb-6 is-3'>
-            <h2 className="subtitle is-3 has-text-grey-lighter">The Robert Gordon University</h2>
+            <h2 className="subtitle has-text-grey-lighter">The Robert Gordon University</h2>
             </div>
             <div className='column pb-6 is-3'>
-            <h2 className="subtitle is-3 has-text-grey-lighter">Universiteit Hasselt</h2>
+            <h2 className="subtitle has-text-grey-lighter">Universiteit Hasselt</h2>
             </div>
             <div className='column pb-6 is-3'>
-            <h2 className="subtitle is-3 has-text-grey-lighter">Fundación Virtualware Labs</h2>
+            <h2 className="subtitle has-text-grey-lighter">Fundación Virtualware Labs</h2>
             </div>
             <div className='column pb-6 is-3'>
-            <h2 className="subtitle is-3 has-text-grey-lighter">Peerby</h2>
+            <h2 className="subtitle has-text-grey-lighter">Peerby</h2>
             </div>
             <div className='column pb-6 is-3'>
-            <h2 className="subtitle is-3 has-text-grey-lighter">Intrasoft</h2>
+            <h2 className="subtitle has-text-grey-lighter">Intrasoft</h2>
             </div>
             <div className='column pb-6 is-3'>
-            <h2 className="subtitle is-3 has-text-grey-lighter">Norwich University of Arts</h2>
+            <h2 className="subtitle has-text-grey-lighter">Norwich University of Arts</h2>
             </div>
             <div className='column pb-6 is-3'>
-            <h2 className="subtitle is-3 has-text-grey-lighter">DesignLab.gr</h2>
+            <h2 className="subtitle has-text-grey-lighter">DesignLab.gr</h2>
             </div>
             <div className='column pb-6 is-3'>
-            <h2 className="subtitle is-3 has-text-grey-lighter">Telcel</h2>
+            <h2 className="subtitle has-text-grey-lighter">Telcel</h2>
             </div>
             <div className='column pb-6 is-3'>
-            <h2 className="subtitle is-3 has-text-grey-lighter">Eindhoven University of Technology</h2>
+            <h2 className="subtitle has-text-grey-lighter">Eindhoven University of Technology</h2>
             </div>
             <div className='column pb-6 is-3'>
-            <h2 className="subtitle is-3 has-text-grey-lighter">Claro</h2>
+            <h2 className="subtitle has-text-grey-lighter">Claro Americas</h2>
             </div>
         </div>
         </div>

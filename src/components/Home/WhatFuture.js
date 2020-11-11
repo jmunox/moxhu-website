@@ -18,7 +18,7 @@ export default view(() => {
             </figure>
           </div>
           <div className='column is-full'>
-            <div className='subtitle is-2'>
+            <div className='subtitle'>
               Let me help you envision how people experience your product and bring that vision to life.
               </div>
           </div>

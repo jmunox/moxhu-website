@@ -1,9 +1,10 @@
 @charset "utf-8";
 
 :root {
-  --title-font-size: 88px;
-  --subtitle-font-size: 44px;
-  --lead-font-size: 22px;
+  --title-font-size: 5rem;
+  --subtitle-font-size: 2rem;
+  --lead-font-size: 1.5rem;
+  --normal-text-font-size: 1.25rem;
   --font-family: "Avenir-Medium", "Avenir", sans-serif;
   --bg_purple: #6152cc;
   --design_bg: #ff88aa;
@@ -16,12 +17,27 @@
 }
 
 :global .title {
-  font-size: calc(0.9 * var(--title-font-size));
+  font-size: var(--title-font-size);
 }
 
-/*:global .subtitle {
-  font-size: calc(0.9 * var(--subtitle-font-size));
-}*/
+:global .subtitle {
+  font-size: var(--subtitle-font-size);
+}
+
+:global .lead {
+  font-size: var(--lead-font-size);
+  word-break: break-word;
+  line-height: 1.25;
+  font-weight: 400;
+  color: inherit;
+}
+
+:global .normal-text {
+  font-size: var( --normal-text-font-size );
+  word-break: normal;
+  line-height: 1;
+  color: inherit;
+}
 
 :global .is-purple {
   background-color: var(--bg_purple, #6152cc);

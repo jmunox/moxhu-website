@@ -13,7 +13,7 @@ export default view(() => {
           <div className='columns is-vcentered is-centered is-desktop is-multiline'>
           <div className='column pb-5'>
           <img src={ProfilePic} />
-          <h1 className="subtitle mt-5 is-2">
+          <h1 className="subtitle mt-5 has-text-weight-bold">
             Jesús Muñoz-Alcántara
       </h1>
             </div>
@@ -33,12 +33,13 @@ export default view(() => {
           </div>
         </div>
       </section>
-      <section className='section has-background-dark has-text-light'>
+      <section className='section has-background-dark'>
         <div className='block is-hidden-desktop mt-6'></div>
           <div className='container has-text-left pl-3 mx-6 mb-5'>
-         <div className={classNames(css.subtitle)}>
+         <p className='subtitle has-text-light has-text-weight-bold' style={ { lineHeight : '1.5' }}>
            I combine <span className={css.designLabel}><span className={classNames(css.design, css.labelSubtitle)}>design</span>
-          </span> with <span className={css.technologyLabel}><span className={classNames(css.technology, css.labelSubtitle)}>technology</span></span> and <span className={css.userResearchLabel}><span className={classNames(css.userResearch, css.labelSubtitle)}>user research</span></span> to help you connect to the people you care about and create a future together.</div>
+          </span> with <span className={css.technologyLabel}><span className={classNames(css.technology, css.labelSubtitle)}>technology</span></span> and <span className={css.userResearchLabel}><span className={classNames(css.userResearch, css.labelSubtitle)}>user research</span></span> to help you connect to the people you care about and create a future together.
+          </p>
          <div className='block is-hidden-desktop mt-6'></div>
          <div className='pt-2'>
          <a className="button is-large is-purple"

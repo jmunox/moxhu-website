@@ -33,11 +33,11 @@ const ItemLink = ({ label, to, toggle, ...rest }) => (
       exact
       path={to}
       children={({ match }) => (
-        <h1 className='subtitle is-3' style={match ? { textDecoration: 'underline' } : {textDecoration: 'none'} } >
+        <span className='subtitle' style={match ? { textDecoration: 'underline' } : {textDecoration: 'none'} } >
           <Link to={to} {...rest} onClick={toggle}>
               {label}
           </Link>
-        </h1>
+        </span>
       )}
     />
   )
