@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { view } from 'react-easy-state';
+import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 import PicWhat1 from 'media/noun_networking_2909312.svg';
 import PicWhat2 from 'media/noun_Brainstorm_2909385.svg';
@@ -39,14 +40,9 @@ export default view(() => {
             </div>
           </div>
           <div className='column is-full pb-6 mb-6'>
-            <a className='button is-large is-purple'
-            onClick={
-              (event) => {
-                event.preventDefault(); 
-                document.getElementById('contact').scrollIntoView({ behavior: 'smooth', block: 'start' })
-            }}>
+          <Link to='/contact' className='button is-large is-purple'>
               <span>Tune in with the people you care about</span>
-            </a>
+          </Link>
           </div>
           <div id='what-2' className={classNames('column is-half-desktop py-6 mt-6', css.hasDesignBackground)}>
             <h1 className="title">
@@ -67,14 +63,9 @@ export default view(() => {
               </div>
           </div>
           <div className='column is-full pb-6 mb-6'>
-            <a className="button is-large is-purple"
-            onClick={
-              (event) => {
-                event.preventDefault(); 
-                document.getElementById('contact').scrollIntoView({ behavior: 'smooth', block: 'start' })
-            }}>
+          <Link to='/contact' className='button is-large is-purple'>
               <span>Grow participation of your users</span>
-            </a>
+          </Link>
           </div>
           <div id='what-3' className={classNames('column is-half-desktop py-6 mt-6', css.hasDesignBackground)}>
             <h1 className="title">
@@ -95,14 +86,9 @@ export default view(() => {
               </div>
           </div>
           <div className='column is-full pb-6 mb-6'>
-            <a className="button is-large is-purple"
-            onClick={
-              (event) => {
-                event.preventDefault(); 
-                document.getElementById('contact').scrollIntoView({ behavior: 'smooth', block: 'start' })
-            }}>
+          <Link to='/contact' className='button is-large is-purple'>
               <span>Live with a superpower</span>
-            </a>
+          </Link>
           </div>
           <div id='what-4' className={classNames('column is-half-desktop py-6 mt-6', css.hasTechnologyBackground)}>
             <h1 className="title">
@@ -123,14 +109,9 @@ export default view(() => {
               </div>
           </div>
           <div className='column is-full pb-6 mb-6'>
-            <a className="button is-large is-purple"
-            onClick={
-              (event) => {
-                event.preventDefault(); 
-                document.getElementById('contact').scrollIntoView({ behavior: 'smooth', block: 'start' })
-            }}>
+          <Link to='/contact' className='button is-large is-purple'>
               <span>Start learning and start leading</span>
-            </a>
+          </Link>
           </div>
           <div id='what-5' className={classNames('column is-half-desktop py-6 mt-6', css.hasUserResearchBackground)}>
             <h1 className="title">
@@ -151,14 +132,9 @@ export default view(() => {
               </div>
           </div>
           <div className='column is-full pb-5'>
-            <a className="button is-large is-purple"
-            onClick={
-              (event) => {
-                event.preventDefault(); 
-                document.getElementById('contact').scrollIntoView({ behavior: 'smooth', block: 'start' })
-            }}>
+          <Link to='/contact' className='button is-large is-purple'>
               <span>Change how people feel about your product</span>
-            </a>
+          </Link>
           </div>
         </div>
       </div>
