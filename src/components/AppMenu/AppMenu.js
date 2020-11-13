@@ -1,10 +1,8 @@
-import * as React from 'react';
-import { useRef } from "react";
-import { Route, Link } from 'react-router-dom';
-import { motion, useCycle } from "framer-motion";
+import React, { useRef } from 'react';
+import { motion, useCycle } from 'framer-motion';
 import { useDebounce, useDimensions } from 'utils/Hook';
-import { MenuToggle } from "./MenuToggle";
-import { Navigation } from "./Navigation";
+import { MenuToggle } from './MenuToggle';
+import { Navigation } from './Navigation';
 
 import * as css from './AppMenu.scss';
 
@@ -16,16 +14,16 @@ const sidebar = {
   open: (height = 1000) => ({
     clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
     transition: {
-      type: "spring",
+      type: 'spring',
       stiffness: 20,
       restDelta: 2
     }
   }),
   closed: {
-    clipPath: "circle(30px at 40px 40px)",
+    clipPath: 'circle(30px at 40px 40px)',
     transition: {
       delay: 0.5,
-      type: "spring",
+      type: 'spring',
       stiffness: 400,
       damping: 40
     }
@@ -44,10 +42,10 @@ const BurgerMenu = () => {
   //document.body.className = 'has-navbar-fixed-top has-background-dark';
 
   return (
-    <motion.nav className="section" role="navigation" aria-label="main navigation"
+    <motion.nav className='section' role='navigation' aria-label='main navigation'
     style={style}
       initial={false}
-      animate={isOpen ? "open" : "closed"}
+      animate={isOpen ? 'open' : 'closed'}
       custom={height}
       ref={containerRef}
     >

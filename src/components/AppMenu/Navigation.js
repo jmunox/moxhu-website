@@ -1,6 +1,6 @@
-import * as React from "react";
-import { motion } from "framer-motion";
-import { MenuItem } from "./MenuItem";
+import * as React from 'react';
+import { motion } from 'framer-motion';
+import { MenuItem } from './MenuItem';
 
 import ProfilePic from 'media/profile-circle.png';
 
@@ -30,15 +30,15 @@ const items = [
         'label': 'Home',
         'icon': <figure className='image is-36x36'><img className='is-rounded' src={ProfilePic} /></figure>,
         'link':'/',
-        'color': "#FF008C"
+        'color': '#FF008C'
     },
     { 
         'label': 'Contact',
         'icon': '',
-        'link':'/contact',
-        'color': "#D309E1"
+        'link':'/home/contact',
+        'color': '#D309E1'
     },
-]
+];
 
 
 const itemIds = [0, 1, 2, 3, 4];

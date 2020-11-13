@@ -28,12 +28,18 @@ const NoMatch = () => {
 
   return (
     <section className='section has-background-dark'>
-    <div className='container pl-3 mt-5 mx-6'>
-      <h3 className='subtitle is-4 has-text-white'>
+    <div className='container px-6 mt-5'>
+      <h3 className='subtitle is-4 has-text-white ml-3'>
         No result found at <code>{location.pathname}</code>
       </h3>
     </div>
     </section>
+  );
+};
+
+const HomeWithChild = ({match, routeProps}) => {
+  return(
+      <Home route={match.params.header} {...routeProps}  />
   );
 };
 
@@ -48,7 +54,7 @@ export default view((props) => {
   const splashScreen = store({
     isActive: true,
   });
-  let isActive = useDebounce(splashScreen.isActive, 7500);
+  let isActive = useDebounce(splashScreen.isActive, 6000);
   
   useEffect(() => {
     splashScreen.isActive = false;
@@ -63,9 +69,11 @@ export default view((props) => {
     <AppMenu />
     <Switch>
     <Route path="/" exact component={Home} />
+    <Route path="/home" exact component={Home} />
+    <Route path="/home/:header" component={HomeWithChild} />
     <Route path="/contact" exact component={withSuspense(ContactUs)} />
     <Route path="*" component={NoMatch} />
-    </Switch>    
+    </Switch>
     <AboutMe/>
     <ContactLinks/>
   </Router>

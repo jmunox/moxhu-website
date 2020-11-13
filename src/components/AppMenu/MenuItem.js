@@ -26,7 +26,7 @@ const variants = {
 };
 
 
-const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
+const colors = ['#FF008C', '#D309E1', '#9C1AFF', '#7700FF', '#4400FF'];
 
 const ItemLink = ({ label, to, toggle, ...rest }) => (
     <Route
@@ -40,7 +40,7 @@ const ItemLink = ({ label, to, toggle, ...rest }) => (
         </span>
       )}
     />
-  )
+  );
 
 export const MenuItem = ({ item, toggle }) => {
     const style = { border: `2px solid ${item.color}` };
