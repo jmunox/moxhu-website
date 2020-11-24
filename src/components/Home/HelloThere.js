@@ -17,6 +17,9 @@ export default view(() => {
                 <h1 className='subtitle mt-5 has-text-weight-bold'>
                   Jesús Muñoz-Alcántara
               </h1>
+              <h2 className='subtitle mt-5 has-text-weight-bold'>
+                  jmunox
+              </h2>
               </div>
               <div className='column'>
                 <div className='container ml-6 pt-4'>
