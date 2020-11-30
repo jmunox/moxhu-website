@@ -68,7 +68,7 @@ const easeVariants = {
           initial={ "before" }
           animate={ "after" }
           >
-          
+          <h1 className="title has-text-primary-light is-1">Pluriversal,</h1>
           <h1 className="title has-text-primary-light is-3">
           
               <quote>

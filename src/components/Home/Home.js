@@ -54,8 +54,8 @@ export default view((props) => {
     <React.Fragment>
       <Hero />
       <HelloThere />
-      <WhatFuture />
       <Organizations />
+      <WhatFuture />
       <The5Whats />
       <HolisticApproach />
       <Banner />

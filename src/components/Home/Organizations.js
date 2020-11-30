@@ -6,7 +6,7 @@ export default view(() => {
     <section id='organizations' className='section has-background-dark py-6'>
       <div className='mx-6'>
         <div className='container has-text-left pl-3 my-4'>
-          <h1 className='title is-1 has-text-white'>Some of the organizations I've worked with:</h1>
+          <h1 className='title is-1 has-text-white'>Some organizations I've worked with in the last 10+ years (Europe &amp; Latin America):</h1>
         </div>
       </div>
       <section className='section'>
@@ -53,6 +53,23 @@ export default view(() => {
           </div>
         </div>
       </section>
+        <div className='mx-6'>
+          <div className='container pl-3'>
+            <div className='pt-2'>
+              <a className='button is-large is-purple'
+                onClick={
+                  (event) => {
+                    event.preventDefault();
+                    document.getElementById('what-future').scrollIntoView({ behavior: 'smooth', block: 'start' })
+                  }}>
+                <span>Explore your path to greatness</span>
+                <span className='icon'>
+                  <i className='fas fa-chevron-down'></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
     </section>
   )
 });

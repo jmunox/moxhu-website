@@ -31,8 +31,9 @@ export default view(() => {
         initial={'before'}
         animate={'after'}
       >
-        <div className='container mx-6'>
-          <motion.div className='container pl-3'
+        <div className='container pl-3'>
+        <div className=''>
+          <motion.div className='has-text-left'
             variants={easeVariants}
           >
           
@@ -54,6 +55,7 @@ export default view(() => {
               </span>
             </a>
           </motion.div>
+        </div>
         </div>
       </motion.div>
     </section>

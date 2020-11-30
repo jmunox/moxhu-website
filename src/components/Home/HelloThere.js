@@ -17,9 +17,6 @@ export default view(() => {
                 <h1 className='subtitle mt-5 has-text-weight-bold'>
                   Jesús Muñoz-Alcántara
               </h1>
-              <h2 className='subtitle mt-5 has-text-weight-bold'>
-                  jmunox
-              </h2>
               </div>
               <div className='column'>
                 <div className='container ml-6 pt-4'>
@@ -38,11 +35,11 @@ export default view(() => {
           </div>
         </div>
       </section>
-      <section className='section has-background-dark'>
+      <section className='section has-background-white'>
         <div className='block is-hidden-desktop mt-6'></div>
         <div className='mx-6'>
           <div className='container has-text-left pl-3 mb-5'>
-            <p className='subtitle has-text-light has-text-weight-bold' style={{ lineHeight: '1.5' }}>
+            <p className='subtitle has-text-dark has-text-weight-bold' style={{ lineHeight: '1.5' }}>
               I combine <span className={css.designLabel}><span className={classNames(css.design, css.labelSubtitle)}>design</span>
               </span> with <span className={css.technologyLabel}><span className={classNames(css.technology, css.labelSubtitle)}>technology</span></span> and <span className={css.userResearchLabel}><span className={classNames(css.userResearch, css.labelSubtitle)}>user research</span></span> to help you connect to the people you care about and create a future together.
             </p>
@@ -52,9 +49,9 @@ export default view(() => {
                 onClick={
                   (event) => {
                     event.preventDefault();
-                    document.getElementById('what-future').scrollIntoView({ behavior: 'smooth', block: 'start' })
+                    document.getElementById('organizations').scrollIntoView({ behavior: 'smooth', block: 'start' })
                   }}>
-                <span>Learn more</span>
+                <span>Learn more about my work</span>
                 <span className='icon'>
                   <i className='fas fa-chevron-down'></i>
                 </span>
