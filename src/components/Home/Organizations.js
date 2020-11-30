@@ -62,7 +62,7 @@ export default view(() => {
                     event.preventDefault();
                     document.getElementById('what-future').scrollIntoView({ behavior: 'smooth', block: 'start' })
                   }}>
-                <span>Explore your path to greatness</span>
+                <span>Inspire change in your organization</span>
                 <span className='icon'>
                   <i className='fas fa-chevron-down'></i>
                 </span>
