@@ -19,14 +19,9 @@ export default view(() => {
                 <span>info[at]moxhu.com</span>
               </a>
             </div>
-            <div className='column is-5-desktop '>
+            <div className='column is-full '>
               <div className='subtitle mt-5'>
-                I am a designer and researcher from the sunny side of México, living in Eindhoven, the most innovative city in the world.
-              </div>
-            </div>
-            <div className='column is-full mt-5'>
-              <div className='subtitle mt-5'>
-                I am on a mission to <b>lead pluriversality</b> in the design process <b>and inspire</b> a new definition of <b>creative power</b> that is <b>based on freedom, partnership and participation</b>.
+              I am on a mission to <b>lead pluriversality</b> in the design process <b>and inspire</b> a new definition of <b>creative power</b> that is <b>based on freedom, partnership and participation</b>.
               </div>
             </div>
           </div>

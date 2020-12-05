@@ -53,23 +53,6 @@ export default view(() => {
           </div>
         </div>
       </section>
-        <div className='mx-6'>
-          <div className='container pl-3'>
-            <div className='pt-2'>
-              <a className='button is-large is-purple'
-                onClick={
-                  (event) => {
-                    event.preventDefault();
-                    document.getElementById('what-future').scrollIntoView({ behavior: 'smooth', block: 'start' })
-                  }}>
-                <span>Inspire change in your organization</span>
-                <span className='icon'>
-                  <i className='fas fa-chevron-down'></i>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
     </section>
   )
 });

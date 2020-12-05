@@ -43,7 +43,7 @@ export default view((props) => {
           <div className='container pl-3'>
             <h1 className='title is-1'>Get in touch</h1>
             <h2 className='subtitle'>
-              I will help you answer the most challenging questions of design.
+              Change how people connect to your business and your product.
             </h2>
           </div>
         </div>

@@ -15,8 +15,8 @@ export default view(() => {
         <div className='container pl-3'>
           <h1 className='title is-1 has-text-light'>Get in touch</h1>
           <h2 className='subtitle has-text-primary-light'>
-            I will help you answer the most challenging questions of design.
-            </h2>
+            Change how people connect to your business and your product.
+          </h2>
         </div>
       </div></section>
   )
