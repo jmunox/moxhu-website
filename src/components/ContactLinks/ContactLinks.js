@@ -92,8 +92,7 @@ export default view(() => {
             </div>
             <p className='lead'>
               <strong>Moxhu</strong> - {new Date().getFullYear()}. <br />
-              Hello there, I am Jesús Muñoz-Alcántara (@jmunox), Mexican Designer &amp; Researcher, living in the Netherlands. 
-              I combine design with technology and user research to help you connect to the people you care about and create a future together. 
+              Jesús Muñoz-Alcántara (@jmunox), Mexican Designer &amp; Researcher, living in the Netherlands. 
               I create communities that care about your business, and innovate the user experience of your product along the way.
               <br /><br />
               The source code of this website is licensed <a href='http://opensource.org/licenses/mit-license.php'>MIT</a>. The website content
