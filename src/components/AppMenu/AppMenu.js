@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useCycle } from 'framer-motion';
 import { useDebounce, useDimensions } from 'utils/Hook';
+import classNames from 'classnames';
 import { MenuToggle } from './MenuToggle';
 import { Navigation } from './Navigation';
 
@@ -37,12 +38,15 @@ const BurgerMenu = () => {
   const { height } = useDimensions(containerRef);
   let z = isOpen ? '1000' : '0';
 
-  let style = { zIndex: isOpen ? useDebounce(z, 0): useDebounce(z, 1000)};
+  let style = { 
+        zIndex: isOpen ? useDebounce(z, 0): useDebounce(z, 1000),
+        width: isOpen ? useDebounce('100%', 0): useDebounce('auto', 1000)
+      };
   let isHidden = isOpen ? useDebounce('', 0): useDebounce('is-hidden', 500); 
-  //document.body.className = 'has-navbar-fixed-top has-background-dark';
+  //document.body.className = 'has-navbar-fixed-top';
 
   return (
-    <motion.nav className='section' role='navigation' aria-label='main navigation'
+    <motion.nav className='' role='navigation' aria-label='main navigation'
     style={style}
       initial={false}
       animate={isOpen ? 'open' : 'closed'}
@@ -50,8 +54,10 @@ const BurgerMenu = () => {
       ref={containerRef}
     >
       <motion.div className={css.background} variants={sidebar} />
-      <div className={isHidden}>
+      <div className={classNames('container', isHidden)}>
+        <div>
         <Navigation toggle={() => toggleOpen()} />
+        </div>
       </div>
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>

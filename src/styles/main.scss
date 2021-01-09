@@ -2,12 +2,8 @@
 @import "@fortawesome/fontawesome-free/css/all.css";
 
 :root {
-  --title-font-size: 5rem;
-  --subtitle-font-size: 2rem;
-  --lead-font-size: 1.5rem;
-  --normal-text-font-size: 1.25rem;
   --font-family: "Avenir-Medium", "Avenir", sans-serif;
-  --bg_purple: #6152cc;
+  --bg_purple: #6152cc; //hsl(247, 54.5, 56.1);
   --design_bg: #ff88aa;
   --design_text: #c40233;
   --tech_bg: #ffd300;
@@ -17,38 +13,71 @@
   --selection-text: #fe57a1;
 }
 
-:global .title {
-  font-size: var(--title-font-size);
+@media screen and (max-width:1023px) {
+  :root {
+    --title-font-size: 2rem;
+    --subtitle-font-size: 1.2rem;
+    --lead-font-size: 1rem;
+    --small-text-font-size: 0.8rem;
+  }
+
+  :global .profile-pic {
+    max-width: 30%;
+  }
+  
 }
 
-:global .subtitle {
-  font-size: var(--subtitle-font-size);
+@media screen and (min-width:1024px) {
+  :root {
+    --title-font-size: 4.8rem;
+    --subtitle-font-size: 2rem;
+    --lead-font-size: 1.6rem;
+    --small-text-font-size: 1rem;
+  }
+  
 }
 
 :global .lead {
   font-size: var(--lead-font-size);
   word-break: break-word;
-  line-height: 1.25;
+  line-height: 1.5;
   font-weight: 400;
   color: inherit;
 }
 
-:global .normal-text {
-  font-size: var( --normal-text-font-size );
+:global .super.title {
+  font-size: var(--title-font-size) !important;
+  font-weight: 600;
+  line-height: 1.125;
+  word-break: break-word;
+  line-break: strict;
+}
+
+:global .super.subtitle {
+  font-size: var(--subtitle-font-size) !important;
+  font-weight: 400;
+  line-height: 1.25;
+  word-break: break-word;
+  line-break: strict;
+}
+
+:global .small-text {
+  font-size: var( --small-text-font-size );
   word-break: normal;
   line-height: 1;
   color: inherit;
 }
 
 :global .is-purple {
-  background-color: var(--bg_purple, #6152cc);
+  background-color: var(--bg_purple, #6152cc); //hsl(247, 54.5, 56.1);
   border-color: transparent;
   color: #fff;
 
 }
 
 :global .button.is-purple:hover {
-  color: #ffe2e2;
+  color: hsl(247, 54.5, 30); //#ffe2e2;
+  background-color: hsl(247, 54.5, 80);
 }
 
 body {

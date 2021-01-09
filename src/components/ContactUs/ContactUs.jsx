@@ -10,12 +10,12 @@ export default view(() => {
   }, [pathname]);
 
   return (
-    <section className='section has-background-dark'>
-      <div className='mx-6'>
-        <div className='container pl-3'>
-          <h1 className='title is-1 has-text-light'>Get in touch</h1>
-          <h2 className='subtitle has-text-primary-light'>
-            Change how people connect to your business and your product.
+    <section className='hero is-bold has-text-grey is-dark'>
+      <div className='hero-body'>
+        <div className='container'>
+          <h1 className='super title has-text-primary-light'>Let's talk</h1>
+          <h2 className='super subtitle has-text-primary-light'>
+            Change how people feel about your product and your business.
           </h2>
         </div>
       </div></section>

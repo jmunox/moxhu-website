@@ -1,43 +1,16 @@
 import * as React from 'react';
 import { view } from 'react-easy-state';
-import { motion } from 'framer-motion';
 import classNames from 'classnames';
 import { useBoolean } from 'utils/Hook';
 
 export default view(() => {
-
-  // Add staggering effect to the children of the container
-  const containerVariants = {
-    before: {},
-    after: { transition: { staggerChildren: 0.06 } },
-  };
-
-  // Variants for animating the sentence
-  const easeVariants = {
-    before: {
-      opacity: 0,
-    },
-    after: {
-      opacity: 1,
-      transition: {
-        ease: [0.17, 0.67, 0.83, 0.67],
-      },
-    }
-  };
-
-  return (
-    <section className='hero is-fullheight is-bold has-text-grey is-dark pb-6'>
+    return (
+        <section className='hero is-medium is-bold has-text-grey is-dark'>
       <Navbar />
-      <motion.div className='hero-body'
-        variants={containerVariants}
-        initial={'before'}
-        animate={'after'}
-      >
+      <div className='hero-body'>
         <div className='container'>
         <div className=''>
-          <motion.div className='has-text-left'
-            variants={easeVariants}
-          >
+          <div className='has-text-left'>
           
             <h1 className='super title has-text-primary-light'>
               Power your future <br /> with the people <br /> who love <br />your product.
@@ -56,12 +29,12 @@ export default view(() => {
                 <i className='fas fa-chevron-down'></i>
               </span>
             </a>
-          </motion.div>
+          </div>
         </div>
         </div>
-      </motion.div>
+      </div>
     </section>
-  )
+    )
 });
 
 const Navbar = () => {
@@ -88,42 +61,19 @@ const Navbar = () => {
         </div>
         <div id='navbarMenuHeroA' className={classNames('navbar-menu', menuState.value ? 'is-active': '')}>
           <div className='navbar-end'>
-            <a className='navbar-item is-size-5-desktop is-active'
-            onClick={
-              (event) => {
-                //event.preventDefault();
-                if (menuState.value) menuState.inverse();
-              }}>
+            <a className='navbar-item is-size-5-desktop'>
               Home
             </a>
-            <a className='navbar-item is-size-5-desktop'
-            onClick={
-              (event) => {
-                event.preventDefault();
-                if (menuState.value) menuState.inverse();
-                document.getElementById('/home/intro').scrollIntoView({ behavior: 'smooth', block: 'start' })
-              }}>
+            <a className='navbar-item is-size-5-desktop'>
               About
             </a>
-            <a className='navbar-item is-size-5-desktop'
-            onClick={
-              (event) => {
-                event.preventDefault();
-                if (menuState.value) menuState.inverse();
-                document.getElementById('/home/services').scrollIntoView({ behavior: 'smooth', block: 'start' })
-              }}>
+            <a className='navbar-item is-size-5-desktop'>
               Services
             </a>
-            <a href='work' className='is-hidden navbar-item is-size-5-desktop'>
+            <a className='navbar-item is-size-5-desktop is-active'>
               Work
             </a>
-            <a className='navbar-item is-size-5-desktop'
-              onClick={
-                (event) => {
-                  event.preventDefault();
-                  if (menuState.value) menuState.inverse();
-                  document.getElementById('/home/contact').scrollIntoView({ behavior: 'smooth', block: 'start' })
-                }}>
+            <a href='/home/contact' className='navbar-item is-size-5-desktop'>
                 <span>Contact</span>
             </a>
           </div>

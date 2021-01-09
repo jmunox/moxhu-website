@@ -63,13 +63,13 @@ const easeVariants = {
           </div>
         </div>
         <div className="hero-body">
-          <motion.div className="container mx-6"
+          <motion.div className="container ml-3"
           variants={ containerVariants }
           initial={ "before" }
           animate={ "after" }
           >
-          <h1 className="title has-text-primary-light is-1">Pluriversal,</h1>
-          <h1 className="title has-text-primary-light is-3">
+          <h1 className="super title has-text-primary-light">Pluriversal,</h1>
+          <h1 className="super subtitle has-text-primary-light">
           
               <quote>
               {firstLine.map((letter, index) => (
@@ -84,7 +84,7 @@ const easeVariants = {
               </quote>
           </h1>
           <br/>
-          <motion.h2 className="subtitle has-text-primary-light is-4"
+          <motion.h2 className="lead has-text-primary-light"
           variants={ easeVariants }
           >
             <i>{secondLine}</i>

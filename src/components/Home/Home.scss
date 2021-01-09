@@ -1,53 +1,61 @@
 @charset "utf-8";
     
 .label-title{
-    font-size: var(--title-font-size);
-    padding: calc(0.2 * var(--title-font-size)) calc(0.2 * var(--title-font-size));
-    overflow: hidden;
-    letter-spacing: 0px;
-    line-height: 1;
-    font-weight: 800;
-     }
+  font-size: calc(0.8 * var(--title-font-size));
+  padding: calc(0.2 * var(--title-font-size)) calc(0.2 * var(--title-font-size));
+  overflow: hidden;
+  letter-spacing: 0px;
+  line-height: 1;
+  font-weight: 800;
+}
 
-     .label-subtitle{
-        font-size: var(--subtitle-font-size);
-        padding: calc(0.2 * var(--subtitle-font-size)) calc(0.2 * var(--subtitle-font-size));
-        overflow: hidden;
-        letter-spacing: 0px;
-        line-height: 1;
-        font-weight: 800;
-         }
+.label-subtitle{
+  font-size: var(--subtitle-font-size);
+  padding: calc(0.2 * var(--subtitle-font-size)) calc(0.2 * var(--subtitle-font-size));
+  overflow: hidden;
+  letter-spacing: 0px;
+  line-height: 1;
+  font-weight: 800;
+}
 
-    .design {
-    color: var(--design_text, #c40233);
-    }
+.label-lead{
+  font-size: var(--lead-font-size);
+  padding: calc(0.2 * var(--lead-font-size)) calc(0.2 * var(--lead-font-size));
+  overflow: hidden;
+  letter-spacing: 0px;
+  line-height: 1;
+  font-weight: 800;
+}
 
-  .design-label {
-    overflow: visible;
-    background: var(--design_bg, #ff88aa);
-    width: max-content;
-  }
+.design {
+  color: var(--design_text, #c40233);
+}
 
-  .user-research {
-    color: var(--user_text, #0087bd);
-  }
+.design-label {
+  overflow: visible;
+  background: var(--design_bg, #ff88aa);
+  width: max-content;
+}
 
-  .user-research-label {
-    background: var(--user_bg, #50e3c2);
-    overflow: visible;
-    width: max-content;
-  }
-  
-  .technology-label {
-    background: var(--tech_bg, #ffd300);
-    overflow: visible;
-    width: max-content;
-  }
+.user-research {
+  color: var(--user_text, #0087bd);
+}
 
-  .technology {
-    color: var(--tech_text, #000000);
-  }
+.user-research-label {
+  background: var(--user_bg, #50e3c2);
+  overflow: visible;
+  width: max-content;
+}
 
+.technology-label {
+  background: var(--tech_bg, #ffd300);
+  overflow: visible;
+  width: max-content;
+}
+
+.technology {
+  color: var(--tech_text, #000000);
+}
 
 
 .has-design-background {
@@ -65,3 +73,16 @@
   background: var(--tech_bg, #ffd300);
   overflow: visible;
 }
+
+/*
+@media screen and (max-width:1023px) {
+  .label-title{
+    font-size: calc(1 * var(--title-font-size));
+    padding: calc(0.2 * var(--title-font-size)) calc(0.2 * var(--title-font-size));
+    overflow: hidden;
+    letter-spacing: 0px;
+    line-height: 1;
+    font-weight: 800;
+  }
+}
+*/

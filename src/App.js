@@ -4,10 +4,10 @@ import { store, view } from 'react-easy-state';
 import { useDebounce } from 'utils/Hook';
 
 import Home from 'components/Home/Home';
-import AppMenu from 'components/AppMenu/AppMenu';
 import AboutMe from 'components/AboutMe/AboutMe';
 import LoadingIntro from 'components/LoadingIntro/LoadingIntro';
 import ContactLinks from 'components/ContactLinks/ContactLinks';
+import SelectedWork from 'components/Work/SelectedWork';
 
 import './styles/main.scss';
 
@@ -66,12 +66,12 @@ export default view((props) => {
   (true && isActive) ? 
   <LoadingIntro/> :
     <Router>
-    <AppMenu />
     <Switch>
     <Route path="/" exact component={Home} />
     <Route path="/home" exact component={Home} />
     <Route path="/home/:header" component={HomeWithChild} />
     <Route path="/contact" exact component={withSuspense(ContactUs)} />
+    <Route path="/work" exact component={SelectedWork} />
     <Route path="*" component={NoMatch} />
     </Switch>
     <AboutMe/>

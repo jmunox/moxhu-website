@@ -7,27 +7,18 @@ import * as css from './Home.scss';
 
 export default view(() => {
   return (
-    <section class='mt-6'>
-      <section className='section has-background-white'>
-        <div className='mx-6'>
-          <div className='container has-text-centered pl-3'>
-            <div id='intro' className='columns is-vcentered is-centered is-desktop is-multiline'>
-              <div className='column pb-5'>
-                <img src={ProfilePic} />
-                <h1 className='subtitle mt-5 has-text-weight-bold'>
+      <section className='section has-background-white py-6 my-6'>
+        <div className='pt-6 mt-6'>
+          <div className='container has-text-centered'>
+            <div id='/home/intro' className='columns is-vcentered is-centered is-desktop is-multiline'>
+              <div className='column pb-1'>
+                <img className='profile-pic' src={ProfilePic} />
+                <h1 className='super subtitle mt-3 has-text-weight-bold has-text-dark'>
                   Jesús Muñoz-Alcántara
-              </h1>
-              <a className='subtitle button mt-4 is-4'
-              onClick={
-                (event) => {
-                  event.preventDefault();
-                  document.getElementById('/home/contact').scrollIntoView({ behavior: 'smooth', block: 'start' })
-                }}>
-                <span>Contact</span>
-              </a>
+                </h1>
               </div>
               <div className='column'>
-                <div className='container ml-6 pt-4'>
+                <div className='container px-4'>
                   <div className={classNames('block')}>
                     <div className={css.designLabel}><div className={classNames(css.design, css.labelTitle)}>design</div></div>
                   </div>
@@ -42,36 +33,45 @@ export default view(() => {
             </div>
           </div>
         </div>
-      </section>
-      <section className='section has-background-white'>
-        <div className='block is-hidden-desktop mt-6'></div>
-        <div className='mx-6'>
-          <div className='container has-text-left pl-3 mb-5'>              
-          <p  className='subtitle my-5'>
-                I am a designer and researcher from the sunny side of México, living the Netherlands: in the city of Eindhoven, the most innovative city in the world.
-              </p>
-            <p className='subtitle has-text-dark' style={{ lineHeight: '1.5' }}>
-              I combine <span className={css.designLabel}><span className={classNames(css.design, css.labelSubtitle, 'has-text-weight-bold')}>design</span>
-              </span> with <span className={css.technologyLabel}><span className={classNames(css.technology, css.labelSubtitle, 'has-text-weight-bold')}>technology</span></span> and <span className={css.userResearchLabel}><span className={classNames(css.userResearch, css.labelSubtitle, 'has-text-weight-bold')}>user research</span></span> to help you connect to the people you care about and create a future together.
+        <div className='block is-hidden-touch mt-4'></div>
+        <div className=''>
+          <div className='container has-text-left py-5'>
+            <p className='lead' style={{ lineHeight: '1.5' }}>
+              If you are looking for how to combine <span className={css.designLabel}><span className={classNames(css.design, css.labelLead, 'has-text-weight-bold')}>design</span>
+              </span> with <span className={css.technologyLabel}><span className={classNames(css.technology, css.labelLead, 'has-text-weight-bold')}>technology</span></span> and <span className={css.userResearchLabel}><span className={classNames(css.userResearch, css.labelLead, 'has-text-weight-bold')}>user research</span></span> to change the future of your business.
+              <span className={'has-text-black has-text-weight-bold'}> You are in the right place!</span>
             </p>
-            <div className='block mt-6'></div>
-            <div className='pt-2'>
-              <a className='button is-large is-purple'
+            <br/>
+            <p  className='lead'>
+                I am a designer and researcher from the sunny side of México, living in the Netherlands. I am based in Eindhoven: the most innovative city in the world.
+            </p>
+            <div className='columns is-mobile mt-1'>
+              <div className='column is-narrow'>
+              <a className='button is-size-5-desktop is-purple'
                 onClick={
                   (event) => {
                     event.preventDefault();
-                    document.getElementById('organizations').scrollIntoView({ behavior: 'smooth', block: 'start' })
+                    document.getElementById('/home/what-future').scrollIntoView({ behavior: 'smooth', block: 'start' })
                   }}>
-                <span>Learn more about my work</span>
+                <span>Learn more</span>
                 <span className='icon'>
                   <i className='fas fa-chevron-down'></i>
                 </span>
               </a>
+              </div>
+              <div className='column is-narrow pb-2'>
+              <a className='button is-dark is-outlined is-size-5-desktop'
+                  onClick={
+                    (event) => {
+                      event.preventDefault();
+                      document.getElementById('/home/contact').scrollIntoView({ behavior: 'smooth', block: 'start' })
+                    }}>
+                    <span>Contact</span>
+              </a>
+              </div>
             </div>
           </div>
         </div>
-        <div className='block is-hidden-desktop mt-6'></div>
       </section>
-    </section>
   )
 });

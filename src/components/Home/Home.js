@@ -39,11 +39,11 @@ export default view((props) => {
 
   const GetInTouchTitle = () => (
       <section className='section'>
-        <div className='mx-6'>
-          <div className='container pl-3'>
-            <h1 className='title is-1'>Get in touch</h1>
-            <h2 className='subtitle'>
-              Change how people connect to your business and your product.
+        <div className=''>
+          <div className='container'>
+            <h1 className='super title'>Get in touch</h1>
+            <h2 className='super subtitle'>
+              Change how people feel about your product and your business.
             </h2>
           </div>
         </div>
@@ -54,8 +54,8 @@ export default view((props) => {
     <React.Fragment>
       <Hero />
       <HelloThere />
-      <Organizations />
       <WhatFuture />
+      <Organizations />
       <The5Whats />
       <HolisticApproach />
       <Banner />
