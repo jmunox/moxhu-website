@@ -11,19 +11,19 @@ export default view(() => {
           <div className=''>
             <div className='columns is-vcentered is-mobile is-multiline'>
               <div className='column pb-3 is-one-fifth-desktop is-one-third-touch'>
-                <a className='button is-dark is-size-5-desktop' href='https://scholar.google.com/citations?user=JalMHCoAAAAJ&hl=en' target='_blank'><u>research</u></a>
+                <a className='button is-dark is-size-5-desktop' href='https://scholar.google.com/citations?user=JalMHCoAAAAJ&hl=en' target='_blank' rel='noopener'><u>research</u></a>
               </div>
               <div className='column pb-3 is-one-fifth-desktop is-one-third-touch'>
-                <a className='button is-dark is-size-5-desktop' href='https://github.com/jmunox' target='_blank'><u>github</u></a>
+                <a className='button is-dark is-size-5-desktop' href='https://github.com/jmunox' target='_blank' rel='noopener'><u>github</u></a>
               </div>
               <div className='column pb-3 is-one-fifth-desktop is-one-third-touch'>
-                <a className='button is-dark is-size-5-desktop' href='https://www.linkedin.com/in/jmunoza/' target='_blank'><u>linkedin</u></a>
+                <a className='button is-dark is-size-5-desktop' href='https://www.linkedin.com/in/jmunoza/' target='_blank' rel='noopener'><u>linkedin</u></a>
               </div>
               <div className='column pb-3 is-one-fifth-desktop is-one-half-touch'>
-                <a className='button is-dark is-size-5-desktop' href='https://instagram.com/jmunox' target='_blank'><u>instagram</u></a>
+                <a className='button is-dark is-size-5-desktop' href='https://instagram.com/jmunox' target='_blank' rel='noopener'><u>instagram</u></a>
               </div>
               <div className='column pb-3 is-one-fifth-desktop is-one-half-touch'>
-                <a className='button is-dark is-size-5-desktop' href='https://twitter.com/jmunox' target='_blank'><u>twitter</u></a>
+                <a className='button is-dark is-size-5-desktop' href='https://twitter.com/jmunox' target='_blank' rel='noopener'><u>twitter</u></a>
               </div>
             </div>
             <div className='columns is-vcentered is-centered is-mobile is-multiline'>
