@@ -2,7 +2,6 @@ import * as React from 'react';
 import { view } from 'react-easy-state';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { useDebounce } from 'utils/Hook';
 import Hero from './Hero';
 import HelloThere from './HelloThere';
 import WhatFuture from './WhatFuture';
