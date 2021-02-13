@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Route, Switch, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, useLocation, Link } from 'react-router-dom';
 import { store, view } from 'react-easy-state';
 import { useDebounce } from 'utils/Hook';
 
@@ -23,34 +23,7 @@ const withSuspense = Component => {
   )
 };
 
-const NoMatch = () => {
-  let location = useLocation();
-
-  return (
-    <section className='section has-background-dark'>
-    <div className='container px-6 mt-5'>
-      <h3 className='subtitle is-4 has-text-white ml-3'>
-        No result found at <code>{location.pathname}</code>
-      </h3>
-    </div>
-    </section>
-  );
-};
-
-const HomeWithChild = ({match, routeProps}) => {
-  return(
-      <Home route={match.params.header} {...routeProps}  />
-  );
-};
-
-
-export default view((props) => {
-
-  let linkIcon = document.createElement('link');
-  linkIcon.rel = 'shortcut icon';
-  linkIcon.href = ProfilePic;
-  document.getElementsByTagName('head')[0].appendChild(linkIcon);
-
+const loadComponent = (Component, showIntro = false) => {
   const splashScreen = store({
     isActive: true,
   });
@@ -60,24 +33,73 @@ export default view((props) => {
     splashScreen.isActive = false;
   },[isActive]);
 
-  return (
+  return props => (
     <React.Fragment>
     { 
-  (true && isActive) ? 
-  <LoadingIntro/> :
+      (showIntro && isActive) ? 
+      <LoadingIntro/> :
+      <React.Fragment>
+        <Component {...props} />
+        <AboutMe/>
+        <ContactLinks/>
+      </React.Fragment>
+    } 
+    </React.Fragment>
+  );  
+};
+
+const NotFound = () => {
+  let location = useLocation();
+
+  return (
+    <Status code={404}>
+      <section className='section has-background-dark'>
+      <div className='container px-6 mt-5'>
+        <h1 className='title is-3 has-text-white ml-3'>404</h1>
+        <h3 className='subtitle is-4 has-text-white ml-3'>
+          No result found at <code>{location.pathname}</code>
+        </h3>
+      </div>
+      </section>
+      <section id='contact-links' className='section has-background-white'>
+        <div className='container has-text-centered'>
+          <Link className='subtitle' style={{ textDecoration: 'none' }} to='/'>Home</Link> 
+        </div>
+        </section>
+    </Status>
+  );
+};
+
+function Status({ code, children }) {
+  return (
+    <Route
+      render={({ staticContext }) => {
+        if (staticContext) staticContext.status = code;
+        return children;
+      }}
+    />
+  );
+};
+
+export default view((props) => {
+
+  let linkIcon = document.createElement('link');
+  linkIcon.rel = 'shortcut icon';
+  linkIcon.href = ProfilePic;
+  document.getElementsByTagName('head')[0].appendChild(linkIcon);
+
+  return (
+    <React.Fragment>
     <Router>
     <Switch>
-    <Route path="/" exact component={Home} />
-    <Route path="/home" exact component={Home} />
-    <Route path="/home/:header" component={HomeWithChild} />
-    <Route path="/contact" exact component={withSuspense(ContactUs)} />
-    <Route path="/work" exact component={SelectedWork} />
-    <Route path="*" component={NoMatch} />
+      <Route path="/" exact component={loadComponent(Home, true)} />
+      <Route path="/home/:header" exact component={loadComponent(Home, false)} />
+      <Route path="/home" component={loadComponent(Home, true)} />
+      <Route path="/contact" exact component={loadComponent(withSuspense(ContactUs), true)} />
+      <Route path="/work" exact component={SelectedWork} />
+      <Route path="*" component={NotFound}  status={404} />
     </Switch>
-    <AboutMe/>
-    <ContactLinks/>
   </Router>
-    } 
   </React.Fragment>
   )
 });
