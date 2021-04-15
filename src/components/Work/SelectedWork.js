@@ -5,35 +5,35 @@ import { useBoolean } from 'utils/Hook';
 
 export default view(() => {
     return (
+      <>
         <section className='hero is-medium is-bold has-text-grey is-dark'>
       <Navbar />
       <div className='hero-body'>
         <div className='container'>
         <div className=''>
-          <div className='has-text-left'>
-          
-            <h1 className='super title has-text-primary-light'>
-              Power your future <br /> with the people <br /> who love <br />your product.
-            </h1>
-            <h2 className='super subtitle has-text-primary-light pt-6 pb-5'>
-              Bring user experience at the forefront.
+        <h2 className='super subtitle has-text-primary-light pb-5'>
+              Explore my work in total freedom:
             </h2>
-            <a className='button is-size-5-desktop is-purple'
-              onClick={
-                (event) => {
-                  event.preventDefault();
-                  document.getElementById('/home/intro').scrollIntoView({ behavior: 'smooth', block: 'start' })
-                }}>
-              <span className=''>Discover how</span>
-              <span className='icon'>
-                <i className='fas fa-chevron-down'></i>
-              </span>
-            </a>
+          <div className='has-text-centered'>
+          <iframe width='100%' height='432' src='https://miro.com/app/live-embed/o9J_lMtfRMQ=/?moveToViewport=22676,-70144,11280,5701' frameBorder='0' scrolling='no' allowFullScreen></iframe>
           </div>
         </div>
         </div>
       </div>
     </section>
+    <section className='section has-background-white'>
+    <div className='py-6 my-6'>
+      <div className='container'>
+      <h2 className='super subtitle has-text-dark pb-5'>
+              or jump directly to see a selection of my projects:
+            </h2>
+        <div className='has-text-centered'>      
+          <iframe width='100%' height='432' src='https://miro.com/app/embed/o9J_lMtfRMQ=/?pres=1&frameId=3074457357242168475' frameBorder='0' scrolling='no' allowFullScreen></iframe>
+        </div>
+      </div>
+      </div>
+    </section>
+    </>
     )
 });
 
@@ -61,13 +61,13 @@ const Navbar = () => {
         </div>
         <div id='navbarMenuHeroA' className={classNames('navbar-menu', menuState.value ? 'is-active': '')}>
           <div className='navbar-end'>
-            <a className='navbar-item is-size-5-desktop'>
+            <a href='/home' className='navbar-item is-size-5-desktop'>
               Home
             </a>
-            <a className='navbar-item is-size-5-desktop'>
+            <a href='/home/contact' className='navbar-item is-size-5-desktop'>
               About
             </a>
-            <a className='navbar-item is-size-5-desktop'>
+            <a href='/home/services' className='navbar-item is-size-5-desktop'>
               Services
             </a>
             <a className='navbar-item is-size-5-desktop is-active'>

@@ -168,7 +168,7 @@ export default view(() => {
                   onClick={
                     (event) => {
                       event.preventDefault();
-                      document.getElementById('/home/contact').scrollIntoView({ behavior: 'smooth', block: 'start' })
+                      document.getElementById('my-approach').scrollIntoView({ behavior: 'smooth', block: 'start' })
                     }}>
                   <span>Let's start your path to greatness</span>
                   <span className='icon'>

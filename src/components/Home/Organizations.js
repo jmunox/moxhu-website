@@ -48,6 +48,12 @@ export default view(() => {
               </div>
             </div>
           </div>
+          <div className='container pt-6'>
+            <a className='button is-size-5-desktop is-white'
+                href="/work">
+                <span className=''>Get to know my work</span>
+              </a>
+          </div>
         </div>
     </section>
   )

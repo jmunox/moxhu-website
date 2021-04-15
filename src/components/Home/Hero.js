@@ -114,7 +114,7 @@ const Navbar = () => {
               }}>
               Services
             </a>
-            <a href='work' className='is-hidden navbar-item is-size-5-desktop'>
+            <a href='/work' className='navbar-item is-size-5-desktop'>
               Work
             </a>
             <a className='navbar-item is-size-5-desktop'

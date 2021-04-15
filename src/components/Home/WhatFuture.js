@@ -37,12 +37,8 @@ export default view(() => {
               </a>
             </div>
             <div className='column is-narrow pb-2'>
-              <a className='is-hidden button is-dark is-outlined is-size-5-desktop'
-                onClick={
-                  (event) => {
-                    event.preventDefault();
-                    document.getElementById('what-1').scrollIntoView({ behavior: 'smooth', block: 'start' })
-                  }}>
+              <a className='button is-dark is-outlined is-size-5-desktop'
+                href='/work'>
                 <span>Check my work</span>
               </a>
             </div>

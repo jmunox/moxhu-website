@@ -27,7 +27,7 @@ const loadComponent = (Component, showIntro = false) => {
   const splashScreen = store({
     isActive: true,
   });
-  let isActive = useDebounce(splashScreen.isActive, 3600);
+  let isActive = useDebounce(splashScreen.isActive, 4000);
   
   useEffect(() => {
     splashScreen.isActive = false;
@@ -57,7 +57,7 @@ const NotFound = () => {
       <div className='container px-6 mt-5'>
         <h1 className='title is-3 has-text-white ml-3'>404</h1>
         <h3 className='subtitle is-4 has-text-white ml-3'>
-          No result found at <code>{location.pathname}</code>
+          No result found 
         </h3>
       </div>
       </section>
@@ -87,16 +87,16 @@ export default view((props) => {
   linkIcon.rel = 'shortcut icon';
   linkIcon.href = ProfilePic;
   document.getElementsByTagName('head')[0].appendChild(linkIcon);
-
+  //<Route path="*" component={NotFound}  status={404} />
   return (
     <React.Fragment>
     <Router>
     <Switch>
       <Route path="/" exact component={loadComponent(Home, true)} />
       <Route path="/home/:header" exact component={loadComponent(Home, false)} />
-      <Route path="/home" component={loadComponent(Home, true)} />
+      <Route path="/home" exact component={loadComponent(Home, true)} />
       <Route path="/contact" exact component={loadComponent(withSuspense(ContactUs), true)} />
-      <Route path="/work" exact component={SelectedWork} />
+      <Route path="/work" exact component={loadComponent(SelectedWork, false)} />
       <Route path="*" component={NotFound}  status={404} />
     </Switch>
   </Router>
