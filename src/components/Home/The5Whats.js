@@ -36,7 +36,7 @@ export default view(() => {
                   Do you know what is going on with your customers?
                 </div>
                 <div className='lead mt-2'>
-                  Asking questions is the starting point to bridge the gap between your users and your business.
+                  Put people first. Asking questions is the starting point to bridge the gap between your users and your business.
                 </div>
               </div>
               <div className='column is-full pb-6 mb-6'>

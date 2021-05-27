@@ -21,7 +21,8 @@ export default view(() => {
             </div>
             <div className='column is-full'>
               <div className='lead'>
-              I am on a mission to <b>lead pluriversality</b> in the design process <b>and drive</b> a new definition of <b>creative power</b> that is <b>based on freedom, partnership and participation</b>.
+              <p className='pb-4'>My passion is to create caring experiences for all possible worlds.</p>
+              <p>I am on a mission to <span className='has-text-black has-text-weight-bold is-super-underlined'>lead pluriversality</span> in the design process <b>and drive</b> a new definition of <b>creative power</b> that is <b>based on generating freedom, partnership and participation</b>.</p>
               </div>
             </div>
           </div>

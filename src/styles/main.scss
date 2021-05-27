@@ -77,7 +77,11 @@
 
 :global .button.is-purple:hover {
   color: hsl(247, 54.5, 30); //#ffe2e2;
-  background-color: hsl(247, 54.5, 80);
+  background-color: hsl(247, 54.5, 80); 
+}
+
+:global .is-super-underlined {
+  background: linear-gradient(transparent 70%, #e66465, #9198e5);
 }
 
 body {

@@ -27,7 +27,7 @@ const loadComponent = (Component, showIntro = false) => {
   const splashScreen = store({
     isActive: true,
   });
-  let isActive = useDebounce(splashScreen.isActive, 4000);
+  let isActive = useDebounce(splashScreen.isActive, 5000);
   
   useEffect(() => {
     splashScreen.isActive = false;

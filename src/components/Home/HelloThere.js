@@ -38,12 +38,15 @@ export default view(() => {
           <div className='container has-text-left py-5'>
             <p className='lead' style={{ lineHeight: '1.5' }}>
               If you are looking for how to combine <span className={css.designLabel}><span className={classNames(css.design, css.labelLead, 'has-text-weight-bold')}>design</span>
-              </span> with <span className={css.technologyLabel}><span className={classNames(css.technology, css.labelLead, 'has-text-weight-bold')}>technology</span></span> and <span className={css.userResearchLabel}><span className={classNames(css.userResearch, css.labelLead, 'has-text-weight-bold')}>user research</span></span> to change the future of your business.
+              </span> with <span className={css.technologyLabel}><span className={classNames(css.technology, css.labelLead, 'has-text-weight-bold')}>technology</span></span> and <span className={css.userResearchLabel}><span className={classNames(css.userResearch, css.labelLead, 'has-text-weight-bold')}>user research</span></span> to nurture
+              <span className={'has-text-black has-text-weight-bold'}> <span className='is-super-underlined'>plural experiences</span></span> that future-proof your business.
               <span className={'has-text-black has-text-weight-bold'}> You are in the right place!</span>
             </p>
             <br/>
             <p  className='lead'>
-                I am a designer and researcher from the sunny side of México, living in the Netherlands. I am based in Eindhoven: the most innovative city in the world.
+                I am a designer and researcher from the sunny side of México. I make my own ice-cream <span className='icon'><i class="fas fa-ice-cream"></i></span>.</p> 
+            <p  className='lead'>
+                I live in the Netherlands, in the city of Eindhoven: the most innovative city in the world.
             </p>
             <div className='columns is-mobile mt-1'>
               <div className='column is-narrow'>

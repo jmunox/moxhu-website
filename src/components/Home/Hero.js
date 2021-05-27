@@ -1,10 +1,14 @@
 import * as React from 'react';
 import { view } from 'react-easy-state';
-import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import classNames from 'classnames';
 import { useBoolean } from 'utils/Hook';
 
 export default view(() => {
+
+  const [page, setPage] = useState(0);
+  
 
   // Add staggering effect to the children of the container
   const containerVariants = {
@@ -25,6 +29,63 @@ export default view(() => {
     }
   };
 
+    // Variants for animating the sentence
+    const wordVariants = {
+      enter: { x: 50, opacity: 0 },
+      center: { x: 0, opacity: 1 },
+      exit: { x: -50, opacity: 0 },
+  }
+
+    const words = [
+      {
+        title: 'love',
+        color: 'var(--design_bg)'
+      },
+      {
+        title: 'challenge',
+        color: '#9198e5'
+      },
+      {
+        title: 'need',
+        color: '#ffa07a'
+      },
+      {
+        title: 'connect to',
+        color: 'var(--design_text)'
+      },
+      {
+        title: 'change',
+        color: 'var(--user_bg)'
+      },
+      {
+        title: 'are critical about',
+        color: 'var(--tech_bg)'
+      },
+      {
+        title: 'innovate',
+        color: 'var(--user_text)'
+      }
+
+    ];
+
+    const wordIndex = Math.abs(page) % words.length;
+    setTimeout(() => setPage(page + 1), 3000)
+
+    const Slideshow = ({ word = words[wordIndex] }) => (
+      <AnimatePresence initial={false}>
+        <motion.span
+          key={word.title}
+          variants={wordVariants}
+          transition={{ duration: 0.8, ease: 'easeInOut' }}
+          initial='enter'
+          animate='center'
+          exit='exit'
+          style={{color : word.color}}
+        > {word.title}
+        </motion.span>
+      </AnimatePresence>
+    )
+
   return (
     <section className='hero is-fullheight is-bold has-text-grey is-dark pb-6'>
       <Navbar />
@@ -40,10 +101,13 @@ export default view(() => {
           >
           
             <h1 className='super title has-text-primary-light'>
-              Power your future <br /> with the people <br /> who love <br />your product.
+              Power your future <br /> with the people <br /> who 
+              <Slideshow />
+               <br />your product.
             </h1>
             <h2 className='super subtitle has-text-primary-light pt-6 pb-5'>
-              Bring user experience at the forefront.
+              Design with care for <span className={classNames('has-text-bold', 'is-super-underlined')} 
+              > plural experiences</span>.
             </h2>
             <a className='button is-size-5-desktop is-purple'
               onClick={
@@ -67,7 +131,7 @@ export default view(() => {
 const Navbar = () => {
   const menuState = useBoolean(false); 
   let isActive = false
-  console.log(menuState.value)
+  //console.log(menuState.value)
   return (
     <div className='hero-head'>
     <nav className='navbar'>
