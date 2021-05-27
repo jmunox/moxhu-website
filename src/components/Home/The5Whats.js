@@ -160,7 +160,7 @@ export default view(() => {
                   How can your product be improved?
                 </div>
                 <div className='lead mt-2'>
-                  Meet face-to-face the problems of your users. Move the decision making closer to your users.
+                  Deepen the impact: meet face-to-face the problems of your users. Move the decision making closer to your users.
                 </div>
               </div>
               <div className='column is-full pb-5'>
