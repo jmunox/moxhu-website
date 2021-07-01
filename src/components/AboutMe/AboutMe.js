@@ -20,9 +20,9 @@ export default view(() => {
               </a>
             </div>
             <div className='column is-full'>
-              <div className='lead'>
-              <p className='pb-4'>My passion is to create caring experiences for all possible worlds.</p>
-              <p>I am on a mission to <span className='has-text-black has-text-weight-bold is-super-underlined'>lead pluriversality</span> in the design process <b>and drive</b> a new definition of <b>creative power</b> that is <b>based on generating freedom, partnership and participation</b>.</p>
+              <div className='lead content'>
+              <p style={{ lineHeight: '1.5' }}>I am a designer and researcher from the sunny side of México. I live in Eindhoven, the Netherlands: the most innovative city in the world.</p>
+              <p>I am on a mission to <span className='has-text-black has-text-weight-bold is-pink-underlined'>lead pluriversality</span> in the design process <b>and drive</b> a new definition of <b>creative power</b> that is <b>based on generating freedom, partnership and participation</b>.</p>
               </div>
             </div>
           </div>

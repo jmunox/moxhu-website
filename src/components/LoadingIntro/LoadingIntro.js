@@ -3,6 +3,7 @@ import { view } from 'react-easy-state';
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
 
+
 import * as css from './LoadingIntro.scss';
 
 import sunsetPic from 'media/sunset.gif';
@@ -58,10 +59,7 @@ const easeVariants = {
       <section className="hero is-fullheight is-bold has-text-grey is-dark">
         <img alt="" className={classNames(css.heroBackground, css.isTransparent, css.hasBackground, 'is-mobile')} src={sunsetPic} />
 
-        <div className="hero-head">
-          <div className="container">
-          </div>
-        </div>
+        
         <div className="hero-body">
           <motion.div className="container ml-3"
           variants={ containerVariants }
@@ -92,6 +90,18 @@ const easeVariants = {
       
           </motion.div>
         </div>
+        <div class="hero-foot has-background-dark has-text-primary-light">
+          <a className='button super subtitle is-fullwidth is-ghost'
+              onClick={
+                (event) => {
+                  event.preventDefault();
+                  document.getElementById('/home/start').scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }}>
+            <span className='icon'>
+                  <i className='fas fa-chevron-down'></i>
+            </span></a>
+          </div>
       </section>
   )
 });
+

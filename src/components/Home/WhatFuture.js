@@ -19,8 +19,8 @@ export default view(() => {
               </figure>
             </div>
             <div className='column is-full'>
-              <div className='lead'>
-                Let me help you envision a <span className='has-text-black has-text-weight-bold is-super-underlined'>plural experience</span> for your product and bring that vision to life.
+              <div className='lead content'>
+                <p>Let me help you envision how people experience your product and bring that vision into life.</p>
               </div>
             </div>
             <div className='column is-narrow pb-2'>

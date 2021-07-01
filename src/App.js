@@ -5,7 +5,7 @@ import { useDebounce } from 'utils/Hook';
 
 import Home from 'components/Home/Home';
 import AboutMe from 'components/AboutMe/AboutMe';
-import LoadingIntro from 'components/LoadingIntro/LoadingIntro';
+//import LoadingIntro from 'components/LoadingIntro/LoadingIntro';
 import ContactLinks from 'components/ContactLinks/ContactLinks';
 import SelectedWork from 'components/Work/SelectedWork';
 
@@ -24,7 +24,8 @@ const withSuspense = Component => {
 };
 
 const loadComponent = (Component, showIntro = false) => {
-  const splashScreen = store({
+  /** remove comment to enable splash screen */
+/*  const splashScreen = store({
     isActive: true,
   });
   let isActive = useDebounce(splashScreen.isActive, 5000);
@@ -32,12 +33,13 @@ const loadComponent = (Component, showIntro = false) => {
   useEffect(() => {
     splashScreen.isActive = false;
   },[isActive]);
-
+*/
   return props => (
     <React.Fragment>
     { 
-      (showIntro && isActive) ? 
-      <LoadingIntro/> :
+    /** remove comment to enable splash screen */
+      /*(showIntro && isActive) ? 
+      <LoadingIntro/> :*/
       <React.Fragment>
         <Component {...props} />
         <AboutMe/>

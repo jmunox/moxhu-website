@@ -51,7 +51,7 @@ export default view(() => {
       },
       {
         title: 'connect to',
-        color: 'var(--design_text)'
+        color: '#ff5c5c'
       },
       {
         title: 'change',
@@ -87,8 +87,8 @@ export default view(() => {
     )
 
   return (
-    <section className='hero is-fullheight is-bold has-text-grey is-dark pb-6'>
-      <Navbar />
+    <section id='/home/start' className='hero is-fullheight is-bold has-text-grey is-dark pb-6'>
+      {/*<Navbar />*/}
       <motion.div className='hero-body'
         variants={containerVariants}
         initial={'before'}
@@ -106,8 +106,7 @@ export default view(() => {
                <br />your product.
             </h1>
             <h2 className='super subtitle has-text-primary-light pt-6 pb-5'>
-              Design with care for <span className={classNames('has-text-bold', 'is-super-underlined')} 
-              > plural experiences</span>.
+              Bring user experience at the forefront.
             </h2>
             <a className='button is-size-5-desktop is-purple'
               onClick={

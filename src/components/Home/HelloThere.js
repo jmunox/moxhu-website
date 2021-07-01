@@ -8,47 +8,40 @@ import * as css from './Home.scss';
 export default view(() => {
   return (
       <section className='section has-background-white py-6 my-6'>
-        <div className='pt-6 mt-6'>
+        <div id='/home/intro' className='pt-6 mt-6'>
           <div className='container has-text-centered'>
-            <div id='/home/intro' className='columns is-vcentered is-centered is-desktop is-multiline'>
-              <div className='column pb-1'>
+            <div className='columns is-vcentered is-centered is-desktop is-multiline'>
+              <div className='column is-half-desktop pb-1'>
                 <img className='profile-pic' src={ProfilePic} />
                 <h1 className='super subtitle mt-3 has-text-weight-bold has-text-dark'>
-                  Jesús Muñoz-Alcántara
+                  Jesús Muñoz-Alcántara.
                 </h1>
               </div>
-              <div className='column'>
+              <div className='column is-half-desktop'>
                 <div className='container px-4'>
+                  <div className={classNames('block')}>
+                    <div className={css.technologyLabel}><div className={classNames(css.technology, css.labelTitle)}>generative</div></div>
+                  </div>
                   <div className={classNames('block')}>
                     <div className={css.designLabel}><div className={classNames(css.design, css.labelTitle)}>design</div></div>
                   </div>
                   <div className={classNames('block')}>
-                    <div className={css.technologyLabel}><div className={classNames(css.technology, css.labelTitle)}>technology</div></div>
+                    <div className={css.userResearchLabel}><div className={classNames(css.userResearch, css.labelTitle)}>research</div></div>
                   </div>
-                  <div className={classNames('block')}>
-                    <div className={css.userResearchLabel}><div className={classNames(css.userResearch, css.labelTitle)}>user research</div></div>
-                  </div>
+                </div>
+          </div>
+              <div className='column is-full'>
+                <div className='lead has-text-left content'>
+                  <p>If you are looking for how to envision the experience of your product and bring that vision to life.
+                  <span className='has-text-black has-text-weight-bold'> You are in the right place!</span>
+                  </p>
+                  <p style={{ lineHeight: '1.5' }}>Hey there, I am Jesús. I help emerging tech communities to <span className='has-text-black has-text-weight-bold is-pink-underlined'>future-proof</span> their products by generating <span className='has-text-black has-text-weight-bold'>inclusive</span>, <span className='has-text-black has-text-weight-bold'>connected</span> and <span className='has-text-black has-text-weight-bold'>plural experiences</span>.</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className='block is-hidden-touch mt-4'></div>
-        <div className=''>
-          <div className='container has-text-left py-5'>
-            <p className='lead' style={{ lineHeight: '1.5' }}>
-              If you are looking for how to combine <span className={css.designLabel}><span className={classNames(css.design, css.labelLead, 'has-text-weight-bold')}>design</span>
-              </span> with <span className={css.technologyLabel}><span className={classNames(css.technology, css.labelLead, 'has-text-weight-bold')}>technology</span></span> and <span className={css.userResearchLabel}><span className={classNames(css.userResearch, css.labelLead, 'has-text-weight-bold')}>user research</span></span> to nurture
-              <span className={'has-text-black has-text-weight-bold'}> <span className='is-super-underlined'>plural experiences</span></span> that matter.
-              <span className={'has-text-black has-text-weight-bold'}> You are in the right place!</span>
-            </p>
-            <br/>
-            <p  className='lead'>
-                I am a designer and researcher from the sunny side of México. I make my own ice-cream <span className='icon has-text-black '><i class="fas fa-ice-cream"></i></span>.</p> 
-            <p  className='lead'>
-                I live in Eindhoven, the Netherlands: the most innovative city in the world.
-            </p>
-            <div className='columns is-mobile mt-1'>
+          <div className='container has-text-left'>
+            <div className='columns is-mobile mt-2'>
               <div className='column is-narrow'>
               <a className='button is-size-5-desktop is-purple'
                 onClick={

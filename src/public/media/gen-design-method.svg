@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="398px" height="398px" viewBox="0 0 398 398" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Design approach</title>
+    <desc>Created with Sketch.</desc>
+    <g id="portfolio" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A4-03-Method-Copy-2" transform="translate(-224.000000, -28.000000)">
+            <circle id="Oval" cx="423" cy="227" r="199"></circle>
+            <circle id="Oval" stroke="#9F2B68" stroke-width="4" cx="420.5" cy="134.5" r="102.5"></circle>
+            <circle id="Oval-Copy-2" stroke="#9F2B68" stroke-width="4" cx="339.5" cy="267.5" r="102.5"></circle>
+            <circle id="Oval-Copy" stroke="#9F2B68" stroke-width="4" cx="506.5" cy="267.5" r="102.5"></circle>
+            <g id="technology-text" transform="translate(265.000000, 240.000000)" fill="#000000" font-family="Avenir-Black, Avenir" font-size="40" font-weight="700" line-spacing="55">
+                <text id="explore">
+                    <tspan x="-12" y="40">explore</tspan>
+                </text>
+            </g>
+            <g id="design-text" transform="translate(335.000000, 105.000000)" fill="#000000" font-family="Avenir-Black, Avenir" font-size="40" font-weight="700" line-spacing="55">
+                <text id="generate">
+                    <tspan x="0" y="40">generate</tspan>
+                </text>
+            </g>
+            <g id="user-research-text" transform="translate(447.000000, 240.000000)" fill="#000000" font-family="Avenir-Black, Avenir" font-size="40" font-weight="700" line-spacing="55">
+                <text id="validate">
+                    <tspan x="0" y="40">validate</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

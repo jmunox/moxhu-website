@@ -80,9 +80,18 @@
   background-color: hsl(247, 54.5, 80); 
 }
 
-:global .is-super-underlined {
+:global .is-pink-underlined {
   background: linear-gradient(transparent 70%, #e66465, #9198e5);
 }
+
+:global .is-yellow-underlined {
+  background: linear-gradient(transparent 70%, #0087bd, #ffffff, #000000, #0087bd);
+}
+
+:global .is-green-underlined {
+  background: linear-gradient(transparent 70%,  #e66465, #ffd300, #0087bd, #000000);
+}
+
 
 body {
   //font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
