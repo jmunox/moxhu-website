@@ -3,6 +3,7 @@ import { view } from 'react-easy-state';
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
 
+import { useBoolean } from 'utils/Hook';
 
 import * as css from './LoadingIntro.scss';
 
@@ -58,10 +59,10 @@ const easeVariants = {
   return (
       <section className="hero is-fullheight is-bold has-text-grey is-dark">
         <img alt="" className={classNames(css.heroBackground, css.isTransparent, css.hasBackground, 'is-mobile')} src={sunsetPic} />
-
+        <div className="hero-head"><Navbar/></div>
         
         <div className="hero-body">
-          <motion.div className="container ml-3"
+          <motion.div className="container"
           variants={ containerVariants }
           initial={ "before" }
           animate={ "after" }
@@ -104,4 +105,70 @@ const easeVariants = {
       </section>
   )
 });
+
+const Navbar = () => {
+  const menuState = useBoolean(false); 
+  let isActive = false
+  //console.log(menuState.value)
+  return (
+    <nav className='navbar is-fixed-top is-semi-transparent' role='navigation' aria-label='main navigation'>
+      <div className='container'>
+        <div className='navbar-brand'>
+          
+          <span className={classNames('navbar-burger', menuState.value ? 'is-active': '')} data-target='navbarMenuHeroA' 
+          style='clip-path: circle(20px at 50% 50%); background-color: white;'
+          onClick={
+            (event) => {
+              event.preventDefault();
+              menuState.inverse();
+            }} >
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id='navbarMenuHeroA' className={classNames('navbar-menu', menuState.value ? 'is-active': '')}>
+          <div className='navbar-end'>
+            <a className='navbar-item is-size-5-desktop'
+            onClick={
+              (event) => {
+                //event.preventDefault();
+                if (menuState.value) menuState.inverse();
+                document.getElementById('/home/start').scrollIntoView({ behavior: 'smooth', block: 'start' })
+              }}>
+              Home
+            </a>
+            <a className='navbar-item is-size-5-desktop'
+            onClick={
+              (event) => {
+                event.preventDefault();
+                if (menuState.value) menuState.inverse();
+                document.getElementById('/home/intro').scrollIntoView({ behavior: 'smooth', block: 'start' })
+              }}>
+              About
+            </a>
+            <a className='navbar-item is-size-5-desktop'
+            onClick={
+              (event) => {
+                event.preventDefault();
+                if (menuState.value) menuState.inverse();
+                document.getElementById('/home/work').scrollIntoView({ behavior: 'smooth', block: 'start' })
+              }}>
+              Work
+            </a>
+            <a className='navbar-item is-size-5-desktop'
+              onClick={
+                (event) => {
+                  event.preventDefault();
+                  if (menuState.value) menuState.inverse();
+                  document.getElementById('/home/contact').scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }}>
+                <span>Contact</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  )
+}
 

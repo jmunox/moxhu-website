@@ -34,7 +34,15 @@
     --lead-font-size: 1.6rem;
     --small-text-font-size: 1rem;
   }
-  
+
+  :global .is-semi-transparent {
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0, 0, 0, 0.0)) !important;
+  }
+
+}
+
+:global .is-semi-transparent {
+  color: #ffe2e2; //#ffe2e2;
 }
 
 :global .lead {

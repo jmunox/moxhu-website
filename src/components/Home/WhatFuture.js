@@ -15,7 +15,7 @@ export default view(() => {
             </div>
             <div className='column is-half-desktop'>
               <figure className='image has-text-center'>
-                <img style='max-width: 70%' src={VisionPic} />
+                <img style='max-width: 60%' src={VisionPic} />
               </figure>
             </div>
             <div className='column is-full'>

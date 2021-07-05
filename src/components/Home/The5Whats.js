@@ -1,11 +1,12 @@
 import * as React from 'react';
 import { view } from 'react-easy-state';
 import classNames from 'classnames';
-import PicWhat1 from 'media/noun_networking_2909312.svg';
-import PicWhat2 from 'media/noun_Brainstorm_2909385.svg';
-import PicWhat3 from 'media/noun_success_2909316.svg';
-import PicWhat4 from 'media/noun_startup_2909309.svg';
-import PicWhat5 from 'media/noun_collaboration_2909353.svg';
+import PicWhat0 from 'media/noun_networking_2909312.svg';
+import PicWhat1 from 'media/noun_collaboration_2909353.svg';
+import PicWhat2 from 'media/noun_success_2909316.svg';
+import PicWhat3 from 'media/noun_startup_2909309.svg';
+import PicWhat4 from 'media/noun_Astronaut_2909362.png';
+import PicWhat5 from 'media/noun_Brainstorm_2909385.svg';
 
 import * as css from './Home.scss';
 
@@ -14,7 +15,7 @@ export default view(() => {
     <React.Fragment>
       <section className='section has-background-white'>
         <div className='pt-6 mt-6'>
-          <div id='/home/services' className='container has-text-left'>    
+          <div id='/home/work' className='container has-text-left'>    
             <h1 className='title is-size-2 has-text-dark'>Five challenges I can help you with:</h1>
           </div>
         </div>
@@ -168,7 +169,7 @@ export default view(() => {
                   onClick={
                     (event) => {
                       event.preventDefault();
-                      document.getElementById('/home/contact').scrollIntoView({ behavior: 'smooth', block: 'start' })
+                      document.getElementById('/home/my-approach').scrollIntoView({ behavior: 'smooth', block: 'start' })
                     }}>
                   <span>Let's start your path to greatness</span>
                   <span className='icon'>

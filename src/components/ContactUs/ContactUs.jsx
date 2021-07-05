@@ -15,7 +15,7 @@ export default view(() => {
         <div className='container'>
           <h1 className='super title has-text-primary-light'>Let's talk</h1>
           <h2 className='super subtitle has-text-primary-light'>
-            Change how people feel about your product and your business.
+            Power your future with imagination of the people who care about your product.
           </h2>
         </div>
       </div></section>

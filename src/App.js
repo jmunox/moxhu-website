@@ -98,7 +98,6 @@ export default view((props) => {
       <Route path="/home/:header" exact component={loadComponent(Home, false)} />
       <Route path="/home" exact component={loadComponent(Home, true)} />
       <Route path="/contact" exact component={loadComponent(withSuspense(ContactUs), true)} />
-      <Route path="/work" exact component={loadComponent(SelectedWork, false)} />
       <Route path="*" component={NotFound}  status={404} />
     </Switch>
   </Router>

@@ -1,3 +1,7 @@
+src/public/media/portfolio*
+
+.firebase*
+
 .DS_Store
 /**/.DS_Store
 

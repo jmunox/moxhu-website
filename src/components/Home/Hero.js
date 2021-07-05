@@ -106,7 +106,7 @@ export default view(() => {
                <br />your product.
             </h1>
             <h2 className='super subtitle has-text-primary-light pt-6 pb-5'>
-              Bring user experience at the forefront.
+              Embrace the power of collective imagination.
             </h2>
             <a className='button is-size-5-desktop is-purple'
               onClick={
